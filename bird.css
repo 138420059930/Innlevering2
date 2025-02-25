@@ -8,7 +8,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+}
+
+.speace{
+    background-image: url(speace.jpg);
+    margin: auto;
 }
 
 #game-container {
