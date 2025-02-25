@@ -35,7 +35,7 @@ function mainLoop() {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 
     if (jumping == 0) {
-        character.style.top = (characterTop + 4) + "px";
+        character.style.top = (characterTop + 3.5) + "px";
     }
 
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -54,6 +54,8 @@ let paused = false
 
 // TODO: Listen for keyboard input, for example esc key
 // When pressed: 
+
+/* 
 if (paused) {
     paused = false
     mainInterval = setInterval(mainLoop, 10);
@@ -62,6 +64,7 @@ if (paused) {
     clearInterval(mainInterval)
 }
 
+*/
 
 function jump() {
     jumping = 1;
@@ -70,7 +73,7 @@ function jump() {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 
         if (characterTop > 6 && jumpCount < 15) {
-            character.style.top = (characterTop - 5) + "px";
+            character.style.top = (characterTop - 4) + "px";
         }
 
         jumpCount++;
