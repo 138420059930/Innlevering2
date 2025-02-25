@@ -35,7 +35,7 @@ function mainLoop() {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 
     if (jumping == 0) {
-        character.style.top = (characterTop + 3.5) + "px";
+        character.style.top = (characterTop + 4) + "px";
     }
 
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -70,7 +70,7 @@ function jump() {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
 
         if (characterTop > 6 && jumpCount < 15) {
-            character.style.top = (characterTop - 4.5) + "px";
+            character.style.top = (characterTop - 5) + "px";
         }
 
         jumpCount++;
