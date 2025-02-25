@@ -10,13 +10,9 @@ body {
     height: 100vh;
 }
 
-.speace{
-    background-image: url(speace.jpg);
+.cyber{
+    background-image: url(cyber.jpg);
     margin: auto;
-}
-
-.speace2{
-    
 }
 
 #game-container {
@@ -29,16 +25,16 @@ body {
 #game {
     width: 700px;
     height: 775px;
-    border: 2px solid black;
+    border: 2px solid rgb(128, 0, 255);
     margin: auto;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(50, 28, 94);
 }
 
 #block {
     width: 50px;
     height: 775px;
-    background-color: black;
+    background-color: rgb(214, 118, 255);
     position: relative;
     left: 700px;
     animation: block 2s infinite linear;
@@ -57,7 +53,7 @@ body {
 #hole {
     width: 50px;
     height: 150px;
-    background-color: white;
+    background-color: rgb(50, 28, 94);
     position: relative;
     left: 700px;
     top: -775px;
