@@ -1,10 +1,10 @@
-var block = document.getElementById("block");
-var hole = document.getElementById("hole");
-var character = document.getElementById("character");
-var jumping = 0;
-var counter = 0;
-var mainInterval;
-var paused = false;
+const block = document.getElementById("block");
+const hole = document.getElementById("hole");
+const character = document.getElementById("character");
+let jumping = 0;
+let counter = 0;
+let mainInterval;
+let paused = false;
 
 function resetGame() {
     // Clear any existing game loop interval
